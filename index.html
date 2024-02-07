@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
+    <meta name="color-scheme" content="light dark " />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,10 +14,13 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
+    <title>Закрывающий тег</title>
   </head>
-  <div>1</div>
-  <body class="page">
-    <header class="header">
+  <body class="page container">
+    <header class="header container">
+      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__tittle">закрывающий тег</h1>
+
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -41,7 +47,65 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="card container">
+        <article>
+          <h2 class="card__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <div class="card_picture_container">
+            <span class="label__element">&lt;/HTML&gt;</span>
+            <img
+              src="images/image (2).png"
+              class="card__picture"
+              loading="lazy"
+              alt="машина стоящая ночью на трассе"
+            />
+          </div>
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <button class="card__icon-button">
+            <svg
+              width="27"
+              height="24"
+              viewBox="0 0 27 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M6 0H3V3H6V0Z" fill="black" />
+              <path d="M9 0H6V3H9V0Z" fill="black" />
+              <path d="M3 3H0V6H3V3Z" fill="black" />
+              <path d="M3 6H0V9H3V6Z" fill="black" />
+              <path d="M3 9H0V12H3V9Z" fill="black" />
+              <path d="M12 0H9V3H12V0Z" fill="black" />
+              <path d="M6 12H3V15H6V12Z" fill="black" />
+              <path d="M9 15H6V18H9V15Z" fill="black" />
+              <path d="M12 18H9V21H12V18Z" fill="black" />
+              <path d="M21 0H24V3H21V0Z" fill="black" />
+              <path d="M18 0H21V3H18V0Z" fill="black" />
+              <path d="M24 3H27V6H24V3Z" fill="black" />
+              <path d="M24 6H27V9H24V6Z" fill="black" />
+              <path d="M24 9H27V12H24V9Z" fill="black" />
+              <path d="M15 0H18V3H15V0Z" fill="black" />
+              <path d="M21 12H24V15H21V12Z" fill="black" />
+              <path d="M18 15H21V18H18V15Z" fill="black" />
+              <path d="M15 18H18V21H15V18Z" fill="black" />
+              <path d="M15 3H12V6H15V3Z" fill="black" />
+              <path d="M15 21H12V24H15V21Z" fill="black" />
+            </svg>
+          </button>
+          <button class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </article>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
