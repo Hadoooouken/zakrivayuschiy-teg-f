@@ -55,8 +55,6 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--accent-font), sans-serif;
-  display: flex;
-  flex-direction: column;
   border: 2px solid var(--main-color);
   background: var(--page-background-color);
   padding: 136px 0 25px;
@@ -79,17 +77,11 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 8px;
 }
 
 .theme-menu__item {
   position: relative;
-}
-
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  left: 2px;
 }
 
 .theme-menu__button {
@@ -99,11 +91,49 @@
   font-size: 14px;
   padding-inline-start: 22px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: 2px;
+  animation: move_arrow 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  opacity: 0.6;
+  transform: scaleX(0);
+  transition: 0.3s ease;
+}
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+  background-color: var(--main-color);
+  transform: scaleX(1);
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: 0.3s ease;
 }
 
 .main {
@@ -123,13 +153,6 @@
   padding: 4px 10px;
 }
 
-.card__text {
-  font-size: 18px;
-  font-weight: var(--text-weight);
-  padding: 27px 25px;
-  
-}
-
 .card__picture {
   object-position: center;
   object-fit: cover;
@@ -139,15 +162,24 @@
   display: block;
 }
 
-.card__text:last-child {
-  padding-block-start: 0;
+.card__block__container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin: 27px 25px;
+}
+
+.card__text {
+  font-size: 18px;
+  font-weight: var(--text-weight);
+  line-height: 21px;
 }
 
 .label__element {
   position: absolute;
   right: 25px;
   top: 56px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-weight: var(--text-weight);
   color: var(--main-color);
   font-size: 14px;
@@ -162,4 +194,29 @@
   .label__element {
     -webkit-text-stroke: 1px var(--label-color);
   }
+}
+
+.card__button_container {
+  display: flex;
+  gap: 6px;
+  justify-content: end;
+  align-items: end;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+/*.like-icon {
+} */
+
+.card__like-button {
+  font-family: var(--accent-font), sans-serif;
+  width: 130px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+  font-weight: var(--text-weight);
 }
