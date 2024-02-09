@@ -14,6 +14,7 @@
   --gradient-color-second: #e7e7e7;
   --gradient-color-third: #1a1a1a;
   --label-color:#FFF;
+  --mix-blend-color-difference: #fff;
 }
 
 :root.theme-dark {
@@ -25,6 +26,7 @@
   --gradient-color-second: #007f0c;
   --gradient-color-third: #004306;
   --label-color:#000;
+  --mix-blend-color-difference: #00CC14;
   
 }
 
@@ -38,6 +40,7 @@
     --gradient-color-second: #e7e7e7;
     --gradient-color-third: #1a1a1a;
     --label-color:#FFF;
+    --mix-blend-color-difference: #fff;
   }
 }
 
@@ -51,5 +54,6 @@
     --gradient-color-second: #007f0c;
     --gradient-color-third: #004306;
     --label-color:#000;
+    --mix-blend-color-difference: #00CC14;
   }
 }
