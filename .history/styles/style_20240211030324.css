@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   padding-block-start: 100px;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wgth" var(--text-weight);
+  font-variation-settings: "wgth 400" var(--text-weight);
   background-color: var(--page-background-color);
   color: var(--main-color);
   background-attachment: fixed;
@@ -68,7 +68,7 @@
 }
 
 .header__logo {
-  font-variation-settings: "wgth" var(--text-weight);
+  font-variation-settings: "wgth 400" var(--text-weight);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
 }
@@ -414,7 +414,7 @@
   }
 
   .theme-menu__button {
-    padding-inline-start: 2px;
+    padding-inline-start: 24px;
   }
   .card__block__container {
     margin: 26px 25px;

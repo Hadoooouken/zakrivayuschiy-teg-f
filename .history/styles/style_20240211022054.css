@@ -407,16 +407,3 @@
 .mix-filter {
   filter: saturate(150%) contrast(2) brightness(200%);
 }
-
-@media (width <= 375px) {
-  .header {
-    padding: 120px 0 24px;
-  }
-
-  .theme-menu__button {
-    padding-inline-start: 2px;
-  }
-  .card__block__container {
-    margin: 26px 25px;
-  }
-}
