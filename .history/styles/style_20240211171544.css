@@ -156,7 +156,7 @@
 
 .card__title {
   font-size: 18px;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wgth" var(--text-weight);
   padding: 6px 10px;
 }
 
@@ -183,7 +183,7 @@
 
 .card__text {
   font-size: 18px;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wgth" var(--text-weight);
   line-height: 21px;
 }
 
@@ -192,7 +192,7 @@
   right: 25px;
   top: 58px;
   font-family: var(--accent-font), sans-serif;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wgth" var(--text-weight);
   color: var(--main-color);
   font-size: 14px;
   mix-blend-mode: hard-light;
@@ -296,7 +296,7 @@
   font-size: 14px;
   border: 2px solid var(--main-color);
   background-color: transparent;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wgth" var(--text-weight);
   position: relative;
   cursor: pointer;
 }
