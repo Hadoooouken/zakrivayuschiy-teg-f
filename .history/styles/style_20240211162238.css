@@ -399,8 +399,9 @@
 
 .dialog {
   background-color: var(--page-background-color);
+  border: 2px solid var(--main-color);
   padding: 50px;
-  outline: 2px solid var(--main-color);
+  outline: 2px;
 }
 
 .floppy__save {
