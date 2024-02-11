@@ -373,10 +373,7 @@
   transform-origin: left;
 }
 
-.dialog-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-}
+dialog-wrappe
 
 .button__save:hover::before {
   transform: scaleX(1);

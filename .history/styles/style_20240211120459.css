@@ -374,8 +374,8 @@
 }
 
 .dialog-wrapper {
-  display: inline-flex;
-  flex-direction: column;
+  display: grid;
+  gr
 }
 
 .button__save:hover::before {

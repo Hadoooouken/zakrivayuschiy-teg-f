@@ -375,7 +375,7 @@
 
 .dialog-wrapper {
   display: inline-flex;
-  flex-direction: column;
+  grid-template-columns: 1fr min-content 1fr;
 }
 
 .button__save:hover::before {
