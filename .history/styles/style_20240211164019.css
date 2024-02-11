@@ -343,8 +343,7 @@
   font-size: 14px;
   position: relative;
   border: 2px solid var(--main-color);
-  max-width: 335px;
-  width: 100%;
+  max-width: ;
   height: 38px;
   display: flex;
   align-items: center;

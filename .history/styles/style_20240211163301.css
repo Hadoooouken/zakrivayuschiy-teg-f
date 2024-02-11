@@ -343,9 +343,7 @@
   font-size: 14px;
   position: relative;
   border: 2px solid var(--main-color);
-  max-width: 335px;
-  width: 100%;
-  height: 38px;
+  height: 51px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +389,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 30px;
+  padding: 20px;
 }
 
 .dialog {
@@ -404,7 +402,6 @@
 .floppy__save {
   color: var(--mix-blend-color-difference);
   mix-blend-mode: difference;
-  flex-shrink: 0;
 }
 
 .button__text__save {
