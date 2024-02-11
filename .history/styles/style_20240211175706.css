@@ -296,7 +296,7 @@
   font-size: 14px;
   border: 2px solid var(--main-color);
   background-color: transparent;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wgh" var(--text-weight);
   position: relative;
   cursor: pointer;
 }

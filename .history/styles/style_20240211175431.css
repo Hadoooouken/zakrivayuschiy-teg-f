@@ -10,7 +10,7 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+Кроме этого, не меняйте HTML перbuttonеключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
 
@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   padding-block-start: 100px;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wght" 400 785;
   background-color: var(--page-background-color);
   color: var(--main-color);
   background-attachment: fixed;
