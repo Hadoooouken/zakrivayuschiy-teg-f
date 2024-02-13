@@ -9,24 +9,15 @@
   background-attachment: fixed;
   background-size: cover;
   background-image: repeating-linear-gradient(
+      var(--gradient-color-first) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
       90deg,
-      var(--gradient-color-first),
-      var(--gradient-color-first) 2px,
-      transparent 2px,
-      transparent 4px
+      var(--gradient-color-first) 0 2px,
+      transparent 2px 4px
     ),
-    repeating-linear-gradient(
-      180deg,
-      var(--gradient-color-second),
-      var(--gradient-color-third) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      var(--gradient-color-second) 0.01%,
-      var(--gradient-color-third)
-    );
+    linear-gradient(var(--gradient-color-second), var(--gradient-color-third));
 }
 
 .container {
@@ -49,10 +40,6 @@
   background: var(--page-background-color);
   padding: 136px 0 25px;
   gap: 20px;
-}
-
-.header__theme-menu {
-  padding-top: 4px;
 }
 
 .header__logo {
